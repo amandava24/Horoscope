@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Horoscope</title>
+    <script src ="script.js"></script>
+    <link rel="stylesheet" href="mySheet.css"/>
+</head>
+<body onload="createDates()">
+<p>Horoscope</p>
+<p>Enter your name and birthday!</p>
+<input type="name" id="myName" value="" size="15">
+
+<select id="chooseMonth" onchange="doDays(this.value)">
+        <option value="1">January</option>
+        <option value="2">February</option>
+        <option value="3">March</option>
+        <option value="4">April</option>
+        <option value="5">May</option>
+        <option value="6">June</option>
+        <option value="7">July</option>
+        <option value="8">August</option>
+        <option value="9">September</option>
+        <option value="10">October</option>
+        <option value="11">November</option>
+        <option value="12">December</option>
+    </select>
+
+    <select id="chooseDay"></select>
+
+    <select id = "chooseYear"></select>
+
+
+<button id="onSubmit" onclick="onSubmit()">enter</button>
+<div id = "sign"></div>
+<div id = "year"></div>
+<div id = "chineseZodiac"></div>
+<div id = "horoscopePrint"></div>
+<p><img id ="image" src=""></p>
+</body>
+</html>
